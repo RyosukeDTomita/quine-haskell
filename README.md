@@ -70,7 +70,7 @@ runghc 4M.hs
 
 - [TerminalTextEffects](https://gigazine.net/news/20240529-terminal-text-effects/)
 
-  [!TerminalTExtEffects](./assets/tte.gif)
+  ![TerminalTTextEffects](./assets/tte.gif)
 
 - [lolcat](https://github.com/busyloop/lolcat)
 
