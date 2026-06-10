@@ -2,7 +2,7 @@
   description = "Haskell dev environment";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.05";
     flake-utils.url = "github:numtide/flake-utils";
   };
 
@@ -23,13 +23,8 @@
         devShells.default = pkgs.mkShell {
           packages = [
             pkgs.zsh
-            # (pkgs.haskell.packages.ghc96.ghcWithPackages (ps: [
-            #   ps.vector
-            #   ps.containers
-            #   ps.bytestring
-            # ]))
-            pkgs.haskell.packages.ghc96.cabal-install
-            pkgs.haskell.packages.ghc96.haskell-language-server
+            pkgs.haskell.packages.ghc9122.ghc
+            pkgs.haskell.packages.ghc9122.haskell-language-server
           ];
         };
       }
