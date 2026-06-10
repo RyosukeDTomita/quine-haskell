@@ -44,26 +44,26 @@ runghc <path to hs>
 ## EXAMPLE
 
 ```shell
-runghc 4M.hs
-              main::                          IO()\nma        in=putSt
-             r$toQ(c                          ycle(s++s      hows))(un
-            linesh)\                          nwhere\nto    Q(c:cs)(x:
-           xs)\ n|c/                          =''&&x=='*'  =c:toQcsxs\
-          n|c=  =''=                          '#': toQcs(x:xs)\n |c=='
-         \\n'   ='\\                          \\':  'n':toQcs(x:  xs)\
-        n|ot    herw                          ise=   x:toQ(c:cs   )xs\
-       ntoQ     __=[                          ]\ns    ="main::    IO()
-      \\nm      ain=                          putS     tr$toQ     (cyc
-     le(s       ++sh                          ows)      )(un      line
-    sh)\        \nwh                          ere\       \n       toQ(
-   c:cs)(x:xs)\\n|c/=''&&x=                   ='*'                =c:t
-  oQcsxs\\n|c==''='#':toQcs                   (x:x                s)\\
- n|c=='\\\\n'='\\\\\\\\':'n                   ':to                Qcs(
-              x:xs                            )\\n                |oth
-              erwi                            se=x                :toQ
-              (c:c                            s)xs                \\nt
-              oQ__                            =[]\                \ns=
-              "mai                            n::I                O()\
+runghc 9M.hs
+    main::IO()\nmain=put                Str$toQ(        cycle(s+
+   +shows))(unlinesh)\nwh               ere\ntoQ(      c:cs)(x:x
+  s)\n|c/=''&&x=='*'=c:toQ              csxs\n|c==    ''='#':toQ
+  cs(x                :xs)              \n|c=='\\n'  ='\\\\':'n'
+  :toQ                cs(x              :xs) \n|otherwise= x:toQ
+  (c:c                s)xs              \nto  Q__=[]\ns="m  ain:
+  :IO(                )\\n              main   =putStr$to   Q(cy
+  cle(s++shows))(unlinesh)              \\nw    here\\nt    oQ(c
+   :cs)(x:xs)\\n|c/=''&&x=              ='*'     =c:toQ     csxs
+    \\n|c==''='#':toQcs(x:              xs)\      \n|c      =='\
+                      \\\n              '='\       \\       \\\\
+                      \':'              n':t                oQcs
+                      (x:x              s)\\                n|ot
+                      herw              ise=                x:to
+                      Q(c:              cs)x                s\\n
+                      toQ_              _=[]                \\ns
+    ="main::IO()\nmain=put              Str$                toQ(
+   cycle(s++shows))(unli                nesh                )\nw
+  here\ntoQ(c:cs)(x:xs                  )\n|                c/='
 ```
 
 ### Combination of other tools
